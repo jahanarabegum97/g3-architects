@@ -1,4 +1,10 @@
-
+:root{
+    --orange:#ff900e;
+    --gray:#424242;
+    --black: #131313;
+    --off-white: #727272;
+    --primary-size: 18px;
+}
 /*--------------------------------
         common styles
 -------------------------------- */
@@ -10,15 +16,26 @@
 body {
   font-family: "Work Sans", sans-serif;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .primary-button {
+    padding: 15px 15px;
+    background: var(--orange);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    /* font-size: 18px; */
+    font-size: var(--primary-size);
+    margin-bottom: 30px;
+  }
 
 /*---------------------------------
         Header Styles start here 
  -----------------------------------*/
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 30px;
-}
 header {
   background: rgba(255, 144, 14, 0.1);
 }
@@ -30,7 +47,7 @@ nav {
 }
 .logo {
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--primary-size);
 }
 .navigation {
   display: flex;
@@ -41,9 +58,9 @@ nav {
 }
 .navigation li a {
   text-decoration: none;
-  color: #424242;
+  color: var(--gray);
   font-weight: 600;
-  font-size: 18px;
+  font-size: var(--primary-size);
 }
 
 /* -------------------------------
@@ -57,24 +74,14 @@ nav {
 .group-of-architects-title {
   font-weight: 900;
   font-size: 3em;
-  color: #131313;
+  color: var(--black);
   text-align: center;
 }
 
 .group-of-architects-description {
   margin: 25px 0;
   line-height: 26px;
-}
-
-.btn-Explore {
-  padding: 15px 15px;
-  background: #ff900e;
-  border-radius: 8px;
-  border: none;
-  color: white;
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 30px;
+  color: var(--off-white);
 }
 .group-of-architects img {
   width: 100%;
@@ -106,19 +113,19 @@ nav {
   font-size: 30px;
 }
 .feature-title {
-  color: #727272;
+  color:var(--off-white);
 }
 .black-color {
-  color: #131313;
+  color: var(--black);
 }
 .orange-color {
-  color: #ff900e;
+  color: var(--orange);
 }
 .feature-descrip {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #727272;
+  color: var(--off-white);
   margin-bottom: 20px;
 }
 
@@ -151,6 +158,7 @@ nav {
 }
 .feature-content p{
     margin: 20px 0; 
+    color: var(--off-white);
 }
 .all-feature-content{
     margin-left: 30px;
@@ -166,13 +174,14 @@ nav {
     font-weight: 600;
     font-size: 20px; 
     font-weight: 400;
-    font-size: 18px;
+    font-size: var(--primary-size);
     line-height: 26px;
-    color: #727272;   
+    color: #727272;
     padding: 10px 0;        
 }
 .feature p{
     padding: 10px 0;
+    color: var(--off-white);
 }
 .features-right img{
     width: 100%;
@@ -184,14 +193,11 @@ width:50%;
 .features-left{
     width:50%;
 }
-
 .btn{
     width: 342px;
     height: 200px;
     margin: 0 auto;
-    margin-top:-140px;
-
-   
+    margin-top:-140px; 
 }
 .btn-experience{
     padding: 20px 20px;
@@ -228,9 +234,8 @@ width:50%;
 }
 .some-facts p {
   padding-top: 10px;
-  color: #727272;
+  color: var(--off-white);
 }
-
 .all-category-work {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -243,10 +248,14 @@ width:50%;
   padding: 20px 20px;
   border: 1px solid #ff900e;
   border-radius: 8px;
-  /* transform: rotate(90deg); */
+  transition: width 1s,height 1s, transform 1s;
+}
+
+.category:hover{
+    transform: rotate(360deg);
 }
 .category p {
-  color: #727272;
+  color:var(--off-white)
 }
 
 /* -------------------------------------
@@ -265,7 +274,7 @@ width:50%;
   margin-bottom: 10px;
 }
 .our-sponsors-info p {
-  color: #727272;
+  color: var(--off-white);
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
@@ -283,19 +292,70 @@ width:50%;
 /* --------------------------------------
         Our Sponsors Styles End
  --------------------------------------- */
+
+/* -----------------------------------------
+           contact Styles Start
+----------------------------------------- */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.section-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title h1{
+    font-weight: 900;
+    font-size: 40px;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 5px solid rgb(230, 169, 55);
+}
+.section-title p{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--off-white);
+    margin-bottom: 50px;
+
+}
+.contact-left img{
+    width: 100%;
+}
+
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: var(--primary-size);
+    border-radius: 4px;
+    outline: 0;
+    border: 1px solid rgb(242, 161, 11);
+}
+
+/* -----------------------------------------
+           contact Styles Start
+----------------------------------------- */
+
 /* ---------------------------------------
             Footer Style Start 
  ----------------------------------------*/
     .footer{
-         /* width: 100%; */
-         height: 100px; 
+        height: 100px; 
         background: #FFF4E7;
         border-radius: 8px;
         margin-bottom: 10px;
     }
     .footer p{
        text-align: center;
-        padding-top: 40px;   
+        padding-top: 40px;  
+        color: var(--off-white); 
     }
  /* ---------------------------------------
             Footer Style End
