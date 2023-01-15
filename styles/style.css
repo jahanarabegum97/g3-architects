@@ -1,3 +1,7 @@
+
+/*--------------------------------
+    common or utilities styles
+-------------------------------- */
 :root{
     --orange:#ff900e;
     --gray:#424242;
@@ -5,9 +9,6 @@
     --off-white: #727272;
     --primary-size: 18px;
 }
-/*--------------------------------
-        common styles
--------------------------------- */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,7 +29,6 @@ body {
     border: none;
     color: white;
     font-weight: 600;
-    /* font-size: 18px; */
     font-size: var(--primary-size);
     margin-bottom: 30px;
   }
@@ -68,24 +68,24 @@ nav {
  -------------------------------*/
 
 .group-of-architects {
-  text-align: center;
-  margin-top: 50px;
+    text-align: center;
+     margin-top: 50px;
 }
 .group-of-architects-title {
-  font-weight: 900;
-  font-size: 3em;
-  color: var(--black);
-  text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+    color: var(--black);
+    text-align: center;
 }
 
 .group-of-architects-description {
-  margin: 25px 0;
-  line-height: 26px;
-  color: var(--off-white);
+    margin: 25px 0;
+    line-height: 26px;
+    color: var(--off-white);
 }
 .group-of-architects img {
-  width: 100%;
-  margin-bottom: 40px;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 /* -------------------------------
@@ -99,34 +99,34 @@ nav {
         Quick list of Our Features Styles Start
     -------------------------------------------- */
 .our-feature-list {
-  display: flex;
-  align-items: center;
-  gap: 60px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }
 .our-feature-img {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin: 70px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 70px 0;
 }
 .our-feature-description {
-  font-size: 30px;
+    font-size: 30px;
 }
 .feature-title {
-  color:var(--off-white);
+    color:var(--off-white);
 }
 .black-color {
-  color: var(--black);
+    color: var(--black);
 }
 .orange-color {
-  color: var(--orange);
+    color: var(--orange);
 }
 .feature-descrip {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  color: var(--off-white);
-  margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--off-white);
+    margin-bottom: 20px;
 }
 
 /* -----------------------------------------------
@@ -138,13 +138,12 @@ nav {
   -------------------------------------------------- */
 
 .love-features {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 60px;
-  margin: 40px 0;
-  
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px 0;
 }
 
 .title-feature{
@@ -153,7 +152,7 @@ nav {
     line-height: 43px;
     color: #131313;
     border-left: 5px solid orange;
-     padding-left: 20px;
+    padding-left: 20px;
  
 }
 .feature-content p{
@@ -188,7 +187,7 @@ nav {
     
 }
 .features-right{
-width:50%;
+    width:50%;
 }
 .features-left{
     width:50%;
@@ -220,42 +219,42 @@ width:50%;
     Some Facts styles start 
     ------------------------------*/
 .some-facts {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 30px;
 }
 .some-facts h1 {
-  font-weight: bold;
-  font-size: 35px;
-  color: black;
-  text-align: left;
-  margin: 50px 0 10px 0;
+    font-weight: bold;
+    font-size: 35px;
+    color: black;
+    text-align: left;
+    margin: 50px 0 10px 0;
 }
 .some-facts p {
-  padding-top: 10px;
-  color: var(--off-white);
+    padding-top: 10px;
+    color: var(--off-white);
 }
 .all-category-work {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .category {
-  width: 170px;
-  height: 170px;
-  text-align: center;
-  margin: 100px 45px;
-  padding: 20px 20px;
-  border: 1px solid #ff900e;
-  border-radius: 8px;
-  transition: width 1s,height 1s, transform 1s;
+    width: 170px;
+    height: 170px;
+    text-align: center;
+    margin: 100px 45px;
+    padding: 20px 20px;
+    border: 1px solid #ff900e;
+    border-radius: 8px;
+    transition: width 1s,height 1s, transform 1s;
 }
 
 .category:hover{
     transform: rotate(360deg);
 }
 .category p {
-  color:var(--off-white)
+    color:var(--off-white)
 }
 
 /* -------------------------------------
@@ -266,25 +265,25 @@ width:50%;
         Our Sponsors Styles Start
  --------------------------------------- */
 .our-sponsors-info {
-  text-align: center;
+   text-align: center;
 }
 .our-sponsors-info h1 {
-  font-weight: 900;
-  font-size: 35px;
-  margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 35px;
+    margin-bottom: 10px;
 }
 .our-sponsors-info p {
-  color: var(--off-white);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
+    color: var(--off-white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
 }
 .all-sponsors{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 80px;
-   margin: 50px 0 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin: 50px 0 80px 0;
 }
 .all-sponsors img{
     filter: grayscale(1);   
@@ -346,17 +345,80 @@ width:50%;
 /* ---------------------------------------
             Footer Style Start 
  ----------------------------------------*/
-    .footer{
-        height: 100px; 
-        background: #FFF4E7;
-        border-radius: 8px;
-        margin-bottom: 10px;
-    }
-    .footer p{
-       text-align: center;
-        padding-top: 40px;  
-        color: var(--off-white); 
-    }
+.footer{
+     height: 100px; 
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.footer p{
+    text-align: center;
+    padding-top: 40px;  
+    color: var(--off-white); 
+}
  /* ---------------------------------------
             Footer Style End
  ----------------------------------------*/
+
+
+ /*---------------------------------------
+     Responsive for small device 
+-------------------------------------------*/
+
+@media only screen and (max-width:576px) {
+.logo{
+    height: 20%0;
+    margin: 0 auto;
+}
+.nav, .navigation {
+    flex-direction: column;
+    margin-top: 200px;
+    padding: 0 0;
+}
+.group-of-architects{
+    margin-top: 200px;
+}
+ .our-feature-list {
+    flex-direction: column;
+}
+.our-feature-img {
+     grid-template-columns: repeat(1, 1fr);
+}
+.love-features {
+    flex-direction: column;
+}
+.features-left{
+    margin: 0 auto;
+}
+.btn{
+    width: 342px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top:-10px; 
+    margin-left: 20px;
+    }
+   
+.all-category-work {
+    grid-template-columns: repeat(1, 1fr);     
+}
+.category {
+    width: 80%;
+    height: 70%;
+    margin: 40px auto;
+}
+.some-facts h1{
+    text-align: center;
+ }
+.some-facts p{
+    text-align: center;
+}
+
+.all-sponsors{
+    flex-direction: column;
+}
+.contact{
+    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
+}
+
+}
