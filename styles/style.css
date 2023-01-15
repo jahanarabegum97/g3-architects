@@ -364,7 +364,7 @@ nav {
  /*---------------------------------------
      Responsive for small device 
 -------------------------------------------*/
-
+ 
 @media only screen and (max-width:576px) {
 .logo{
     height: 20%0;
